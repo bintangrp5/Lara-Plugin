@@ -2,6 +2,7 @@
 <html>
 <head>
     <title>Data Siswa</title>
+    @vite('resources/css/app.css')
 </head>
 <body>
     <h1>Data Siswa</h1>
@@ -12,7 +13,7 @@
 
     <a href="{{ route('siswa.create') }}">Tambah Siswa</a>
 
-    <table border="1" cellpadding="10" cellspacing="0">
+    <table class="bg-blue-400" border="1" cellpadding="10" cellspacing="0">
         <thead>
             <tr>
                 <th>No</th>
@@ -27,7 +28,7 @@
             @foreach($siswas as $index => $siswa)
             <tr>
                 <td>{{ $index + 1 }}</td>
-                <td>{{ $siswa->nama }}</td>
+                <td>{{ $siswa->name }}</td>
                 <td>{{ $siswa->email }}</td>
                 <td>{{ $siswa->alamat }}</td>
                 <td>{{ $siswa->nama_pacar }}</td>

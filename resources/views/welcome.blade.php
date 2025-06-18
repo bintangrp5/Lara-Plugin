@@ -6,8 +6,9 @@
     @vite('resources/css/app.css')
   </head>
   <body>
-    <h1 class="text-3xl font-bold underline text-violet-500">
+    <h1 class="text-3xl font-bold underline text-red-500">
       Hello world!
     </h1>
+    <p class="text-lg text-violet-600 py-3 px-2">Pertemuan 3</p>
   </body>
 </html>
